@@ -1,375 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Kalp - developer portfolio </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin=0;
-            padding=0;
-
-        }
-
-        body {
-            background-color: rgb(4, 4, 42);
-            color: white;
-            font-family: 'Raleway', sans-serif;
-
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(31, 7, 52);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgba(90, 237, 173, 0.933);
-            font-size: 1.03rem;
-
-        }
-
-        main hr {
-            border: 0;
-            background: rgb(95, 95, 212);
-            height: 1.2px;
-            margin: 59px 73px;
-        }
-
-        .left {
-            font-size: 1.7rem;
-        }
-
-        .first {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
-        }
-
-        .first>div {
-            width: 30%;
-        }
-
-        .leftsection {
-            font-size: 2.5rem;
-            margin: 140px;
-
-        }
-
-        .leftsection .btn {
-            padding: 12px;
-            background-color: #04042a;
-            color: white;
-            border: 2px solid;
-            border-radius: 8px;
-            cursor: pointer;
-
-        }
-
-        .leftsection .btn1 {
-            padding: 12px;
-            cursor: pointer;
-            background-color: #ab6ce5;
-            border: solid;
-            border-radius: 34px;
-        }
-
-        .rightsection img {
-            width: 80%;
-
-
-        }
-
-        .purple {
-            color: rgb(171, 108, 229);
-        }
-
-        #element {
-            color: rgb(171, 108, 229);
-
-        }
-
-        .secondsection {
-            height: 80vh;
-            max-width: 70vw;
-            margin: auto;
-        }
-
-        .secondsection h1 {
-            font-size: 1.9rem;
-        }
-
-        .text-gray {
-            color: gray;
-        }
-
-        .secondsection .box {
-            background: white;
-            width: 66vw;
-            height: 2px;
-            margin: 107px 0;
-            display: flex;
-        }
-
-        .secondsection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 100px;
-        }
-
-        .verticaltext {
-            position: relative;
-            top: 58px;
-            right: 20px;
-            width: 150px;
-
-
-        }
-
-        .vertical-desc {
-            top: 110px;
-            position: relative;
-            font-size: 9px;
-            color: gray;
-            right: 16px;
-        }
-
-        .image-top {
-            width: 52px;
-            height: 39px;
-            position: relative;
-            top: -51px;
-            left: -26px;
-        }
-
-        footer {
-            background-color: rgb(126 93 150 / 19%);
-            height: 214px;
-        }
-
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 223px;
-        }
-
-        footer .footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 23px;
-
-        }
-        #preloader{
-            background:rgb(13 1 33) url(preloader.gif) no-repeat center center;
-            background-size: 50%;
-            height: 100vh;
-            width: 100%;
-            position: fixed;
-            z-index: 100;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="preloader">
-
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login_form_container">
+      <div class="login_form">
+        <h2>Login</h2>
+        <div class="input_group">
+          <i class="fa fa-user"></i>
+          <input
+            type="text"
+            placeholder="Username"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input_group">
+          <i class="fa fa-unlock-alt"></i>
+          <input
+            type="password"
+            placeholder="Password"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="button_group" id="login_button">
+          <a href="http://127.0.0.1:5500/index.html" style="    color: white;">Submit</a>
+        </div>
+        <div class="fotter">
+          <a>Forgot Password ?</a>
+          <a>SingUp</a>
+        </div>
+      </div>
     </div>
-    
-    <header>
-        <nav>
-            <div class="left"><b>My Portfolio</b></div>
-            <div class="right">
-                <ul>
-                    <li><a href="https://th.bing.com/th/id/R.e782a936b2fac18720a3aedad7c868f2?rik=AkIneIZ5zZAv7Q&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcoming-soon-transparent%2fcoming-soon-transparent-17.png&ehk=sIsPWtTqg7kygwwQ9T3qU1ur4CqQ1OE6p6JQeulx9JI%3d&risl=&pid=ImgRaw&r=0">Home </a></li>
-                    <li><a href="https://th.bing.com/th/id/R.e782a936b2fac18720a3aedad7c868f2?rik=AkIneIZ5zZAv7Q&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcoming-soon-transparent%2fcoming-soon-transparent-17.png&ehk=sIsPWtTqg7kygwwQ9T3qU1ur4CqQ1OE6p6JQeulx9JI%3d&risl=&pid=ImgRaw&r=0">Services </a></li>
-                    <li><a href="https://th.bing.com/th/id/R.e782a936b2fac18720a3aedad7c868f2?rik=AkIneIZ5zZAv7Q&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcoming-soon-transparent%2fcoming-soon-transparent-17.png&ehk=sIsPWtTqg7kygwwQ9T3qU1ur4CqQ1OE6p6JQeulx9JI%3d&risl=&pid=ImgRaw&r=0">My Projects </a></li>
-                    <li><a href=" https://th.bing.com/th/id/R.e782a936b2fac18720a3aedad7c868f2?rik=AkIneIZ5zZAv7Q&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcoming-soon-transparent%2fcoming-soon-transparent-17.png&ehk=sIsPWtTqg7kygwwQ9T3qU1ur4CqQ1OE6p6JQeulx9JI%3d&risl=&pid=ImgRaw&r=0">Contact Me </a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="first">
-            <div class="leftsection">Hi, My Name is <span class="purple"><b>Kalp</b></span>
-                <div>I am passionate </div><span id="element"></span>
-                <div class="buttons">
-                    <button class="btn">
-                        Download Resume
-                    </button>
-                    <button class="btn1">
-                        Linkdin
-                    </button>
-                </div>
-            </div>
-            <div class="rightsection">
-                <img src="coder.png" alt="Kalp">
-            </div>
 
-        </section>
-        <hr>
-        <section class="secondsection">
-            <span class="text-gray">What I have done so far</span>
-            <h1>Work Experience</h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="HTML 5.png" alt="">
-                    <div class="verticaltext" style="position: relative;top: 57px;right: 20px;">
-                        Web Developer (2020-2023)
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="game dev.png" alt="">
-                    <div class="verticaltext" style="position: relative;top: 57px;right: 20px;">
-                        Game Developer (2020-2023)
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="ui.png" alt="">
-                    <div class="verticaltext" style="position: relative;top: 57px;right: 20px;">
-                        UI/UX Developer (2021-2023)
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="android.png" alt="">
-                    <div class="verticaltext" style="position: relative;top: 57px;right: 20px;">
-                        Android Developer (2022-2023)
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="iot.webp" alt="">
-                    <div class="verticaltext" style="position: relative;top: 57px;right: 20px;">
-                        IoT Programmer (2022-2023)
-                    </div>
-                </div>
-
-            </div>
-
-
-            </div>
-
-
-
-        </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Kalp's Portfolio</h3>
-            </div>
-            <div class="footer-second">
-                <ul>
-                    <li>
-                        home
-                    </li>
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                    <li>
-                        Services
-                    </li>
-                </ul>
-
-
-            </div>
-            <div class="footer-third">
-                <ul>
-                    <li>
-                        home
-                    </li>
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                    <li>
-                        Services
-                    </li>
-                </ul>
-
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                    <li>
-                        home
-                    </li>
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                    <li>
-                        Services
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-        <div class="footer-rights">
-            Copyright &#169; kalpmodiportfolio.com | ALL RIGHTS ARE RESERVED ®
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer,', 'Android Developer,', 'UI/UX Developer,', 'Game Developer .'],
-            typeSpeed: 50,
-        });
-    </script>
-
-
-
-
-
-
-<script>
-
-    var loader = document.getElementById("preloader");
-
-    window.addEventListener("load",function(){
-        loader.style.display= "none";
-    })
-</script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+  </body>
 </html>
